@@ -1,0 +1,9 @@
+Description: 'SAM Demo: Lambda'
+Transform: AWS::Serverless-2016-10-31
+Resources:
+  OpenHelloWorldFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: s3://mw-800524020870-example/b36e702240f7cb4642632fcea7b9859b
+      Handler: index.lambdaHandler
+      Runtime: nodejs10.x
